@@ -31,7 +31,7 @@ def sendmail(request):
             mes,
             settings.EMAIL_HOST_USER,
             ['mamushtaq00995@gmail.com'],
-            fail_silently=False,
+            fail_silently=True,
         )
         return HttpResponseRedirect(reverse("home"))
     else:
