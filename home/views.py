@@ -32,6 +32,6 @@ def sendmail(request):
             ['mamushtaq00995@gmail.com'],
             fail_silently=False,
         )
-        return render(request, 'home/home.html')
+        return HttpResponseRedirect(reverse("home"))
     else:
         return render(request, 'home/home.html')
