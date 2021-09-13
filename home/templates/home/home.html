@@ -1,0 +1,297 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Muhammad Ali
+{% endblock %}
+
+            
+
+
+{% block body %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <ul id="navbar">
+        <div class="mob-head">
+            <strong>MUHAMMAD ALI</strong>
+        </div>
+        <li id="header" class="navlist"><a href="{% url 'home' %}"><strong>Muhammad Ali</strong></a></li>
+        <li class="navlist"><a href="#contact">Contact</a></li>
+        <li class="navlist"><a href="#offer">What I offer</a></li>
+        <li class="navlist"><a href="#c2">Skills</a></li>
+        <li class="navlist"><a href="#experiences">Experiences</a></li>
+        <li class="navlist"><a href="#desc">About me</a></li>
+    </ul>
+    <div class="body">
+        <div id="intro">
+            <h1>Hi! I am <strong>Muhammad Ali</strong></h1>
+            <h3>Graphics Designer, Video Editor and Full-Stack Web Developer</h3>
+            <button><a href="#desc" style="color: white;">See More</a></button> <button><a href="{% url 'portfolio' %}" style="color: white;">Portfolio</a></button>
+        </div>
+        <div id="desc">
+            <div class="my_intro">
+                <img src="{% static 'images/my_photo.jpeg' %}">
+            </div>
+            <div class="my_intro">
+                <div class="heading" id="info" style="padding-top: 7%; background-color: lightgray;">
+                    <h3>Muhammad Ali Bin Mushtaq</h3>
+                    <p>Web Developer, Video Editor and Graphics Designer</p>
+                    <hr>
+                    <h4>Email Address</h4>
+                    <p>mamushtaq00995@gmail.com</p>
+                    <hr>
+                    <h4>Hire Me On</h4>
+                    <p><a href="https://www.upwork.com/freelancers/~01ad7aac0f05dfe19b" id="upwork">Upwork</a></p>
+                </div>
+            </div>
+            <div id="social">
+                <div id="links">
+                    <a><img src="{% static 'images/fb.png' %}" alt="FaceBook"></a>
+                    <a><img src="{% static 'images/in.png' %}" alt="FaceBook"></a>
+                    <a><img src="{% static 'images/insta.png' %}" alt="FaceBook"></a>
+                    <a><img src="{% static 'images/up.png' %}" alt="FaceBook"></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container" id="aboutme">
+        <div id="content">
+
+            <h2>About me</h2>
+            <p>Hi I am Muhammad Ali and I have been offering freelancing services for half a year as a Graphics Designer. I offer extraordinary services in Logo designing, Poster Designing, Web designing and Web Development. I always end contracts with client when I have provided more than they asked for. I will be looking forward to working with you.</p>
+        </div>
+    </div>
+    <div class= "heading" id="experiences">
+        <h2>Experiences And Education</h2>
+        <hr>
+    </div>
+    <div class="container" style="background-color: white;">
+        <div class="row">
+            <div class="vl"></div>
+            <div class="column1">
+                <h1>Freelancing</h1>
+                <p>May 2021 to present</p>
+            </div>
+            <div class="column2">
+                <h3>FULL STACK WEB DEVELOPMENT</h3>
+                <p><strong>Platforms:</strong> Upwork</p>
+                <p><strong>Skills Used: </strong> JavaScript - React - Python - Django</p>
+                <a href="https://www.upwork.com/freelancers/~01ad7aac0f05dfe19b">Upwork Profile</a>
+                <hr>
+                <h3>GRAPHICS DESIGNER</h3>
+                <p><strong>Platform:</strong> Fiverr</p>
+                <p><strong>Skills:</strong> Adobe Photoshop - Adobe Illustrator - Adobe XD</p>
+                <a href="https://www.fiverr.com/share/WkVEQ5">Fiverr Gig</a>
+                <hr>
+                <h3>VIDEO EDITOR</h3>
+                <p><strong>Platform:</strong> Fiverr</p>
+                <p><strong>Skills:</strong> Adobe After Effects - Adobe Premiere Pro</p>
+                <a href="https://www.fiverr.com/share/WkVEQ5">Fiverr Gig</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container" style="background-color: white;">
+        <div class="row">
+            <div class="vl"></div>
+            <div class="column1">
+                <h1>Bachelors</h1>
+                <p>2020 - 2024 (Expected)</p>
+            </div>
+            <div class="column2">
+                <h3>ELECTRICAL ENGINEERING</h3>
+                <p><strong>National University of Sciences and Technology</strong></p>
+                <p>Pakistan</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container" style="background-color: white;">
+        <div class="row">
+            <div class="vl"></div>
+            <div class="column1">
+                <h1>Additional Courses</h1>
+            </div>
+            <div class="column2">
+                <h3>Web Programming with Python And JavaScript</h3>
+                <p><strong>CS50</strong></p>
+                <a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript?index=product&queryID=ee60c0cb0e729e1802b0248b3cf348fd&position=2">Course Link</a>
+                <hr>
+                <h3>Introduction to Artificial Intelligence with Python</h3>
+                <p><strong>CS50</strong></p>
+                <a href="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python">Course Link</a>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container" id="c2">
+        <div class="heading" style="background-color: darkblue; color: white; border-top: 20px solid white;">
+            <h2>Skills</h2>
+        </div>
+        <div id="skills">
+            <div class="heading" style="background-color: rgba(138, 43, 226, 0.5); color: white; margin-top: 3%;">
+                <h3>Programming</h3>
+            </div>
+            <div class="skill">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <p>React.js</p>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <p>Django</p>
+            </div>
+            <div class="skill">
+                <p>SQLite</p>
+            </div>
+            <div class="skill">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="heading" style="background-color: rgba(138, 43, 226, 0.5); color: white; margin-top: 3%;">
+                <h3>Graphics Designing</h3>
+            </div>
+            <div class="skill">
+                <p>Adobe Photoshop</p>
+            </div>
+            <div class="skill">
+                <p>Adobe Illustrator</p>
+            </div>
+            <div class="skill">
+                <p>Adobe XD</p>
+            </div>
+            <div class="skill">
+                <p>Canva</p>
+            </div>
+            <div class="skill">
+                <p>Figma</p>
+            </div>
+            <div class="heading" style="background-color: rgba(138, 43, 226, 0.5); color: white; margin-top: 3%;">
+                <h3>Video Editing</h3>
+            </div>
+            <div class="skill">
+                <p>Adobe After Effects</p>
+            </div>
+            <div class="skill">
+                <p>Adobe Premiere Pro</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-color: white; text-shadow: none; color: black;" id="offer">
+        <div class="heading">
+            <h2>Services I offer</h2>
+        </div>
+        <hr>
+        <div id="expert">
+        <div class="expertise">
+            <div class="heading">
+                <h3>Website Development</h3>
+            </div>
+            <hr>
+            <div class="description">
+                <p>I am passionate about designing and developing user-friendly websites. I have all the skills to create a new high quality website or improve existing websites for individuals and organisations, using the latest techniques and trends</p>
+                <strong>I am well skilled in</strong>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="expertise">
+            <div class="heading">
+                <h3>Graphics Design</h3>
+            </div>
+            <hr>
+            <div class="description">
+                <p>With 2+ years of experience in graphics designing,</p>
+                <strong>I provide</strong>
+                <ul>
+                    <li>Logo Design and Branding</li>
+                    <li>Presentations</li>
+                    <li>T-shirt design</li>
+                    <li>UX/UI Design</li>
+                    <li>Character Design</li>
+                    <li>Package Design</li>
+                </ul>
+                <strong>I am well skilled in</strong>
+                <ul>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Figma</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="expertise">
+            <div class="heading">
+                <h3>Video Editing</h3>
+            </div>
+            <hr>
+            <div class="description">
+                <p>I'm an expert in the field of animation and motion graphics</p>
+                <strong>Such as</strong>
+                <ul>
+                    <li>Video Editing</li>
+                    <li>Travel Montage</li>
+                    <li>Explainer and corporate videos</li>
+                    <li>Logo animation and youtube videos</li>
+                    <li>Gaming Montage</li>
+                    <li>Lyrics Videos</li>
+                    <li>and more</li>
+                </ul>
+                <strong>I am well skilled in</strong>
+                <ul>
+                    <li>Adobe After Effects</li>
+                    <li>Adobe Premiere Pro</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="heading">
+        <button><a href="{% url 'portfolio' %}" >View My Work</a></button>
+    </div>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="vl" style="margin-top: 0; margin-bottom: 0; top: 0; bottom: 0; border-left: 1px solid white;"></div>
+            <div class="column1">
+                <form action="{% url 'sendmail' %}" method="POST">
+                    {% csrf_token %}
+                    <input name="name" type="text" placeholder="Your Name" class="small_form">
+                    <input name="email" type="text" placeholder="Your Email Address"  class="small_form">
+                    <input name="subject" type="text" placeholder="Subject" style="width: 90%;">
+                    <textarea name="message" placeholder="Your Message" cols="30" rows="10" style="width: 90%;"></textarea>
+                    <input class = "submit" type="submit">
+                </form>
+                <hr>
+            </div>
+            <div class="column2">
+                <div class="heading" style="padding-top: 7%; background-color: lightgray;">
+                    <h3>Muhammad Ali Bin Mushtaq</h3>
+                    <p>Full Stack Web Developer and Graphics Designer</p>
+                    <hr>
+                    <h4>Email Address</h4>
+                    <p>mamushtaq00995@gmail.com</p>
+                    <hr>
+                    <h4>Hire Me On</h4>
+                    <p>Upwork</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{%endblock%}

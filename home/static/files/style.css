@@ -1,0 +1,407 @@
+html{
+    font-family: sans-serif;
+    font-size: medium;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+#intro {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 16%;
+    padding-bottom: 26%;
+    border: 10px;
+}
+#intro h1 {
+    font-size: 60px;
+}
+#intro strong {
+    color: blueviolet;
+}
+.mob-head {
+    display: none;
+}
+#navbar {
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(90, 90, 90, 0.6);
+    text-shadow: none;
+    z-index: 1;
+}
+.navlist {
+    float: right;
+}
+
+.navlist a{
+    display: block;
+    color: white;
+    opacity: 1;
+    float: right;
+    padding: 24px 26px;
+}
+#header{
+    float: left;
+}
+.body {
+    display: block;
+    width: 80%;
+    height: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+h1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+div {
+    text-align: center;
+}
+#desc {
+    display: block;
+    width: 80%;
+    height: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+}
+.my_intro {
+    display: block;
+    margin: 0;
+    margin-bottom: 0;
+    width: 48%;
+    height: 100%;
+    float: left;
+    background-color: lightgray;
+    color: black;
+    text-shadow: none;
+}
+.my_intro img {
+    width: auto;
+    height: 100%;
+}
+.my_intro p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#social {
+    overflow: hidden;
+    clear: left;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blueviolet;
+    padding: 2%;
+    margin: 0;
+}
+.container {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    overflow: hidden;
+}
+#aboutme {
+    z-index: -1;
+}
+#content {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10%;
+    color: black;
+    text-shadow: none;
+}
+.row {
+    display: block;
+    width: 100%;
+    color: black;
+    text-shadow: none;
+}
+.column1 {
+    display: block;
+    width: 40%;
+    padding: 5%;
+    padding-top: 0%;
+    text-align: right;
+    float: left;
+}
+.column2 {
+    display: block;
+    width: 40%;
+    padding: 5%;
+    padding-top: 0%;
+    text-align: left;
+    float: left;
+}
+.vl {
+    border-left: 1px solid black;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 15px;
+    bottom: 15px;
+}
+.heading {
+    display: block;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    text-shadow: none;
+    color: black;
+}
+.heading hr {
+    margin-bottom: 5%;
+}
+.skills {
+    display: block;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px;
+    background-color: rgba(100, 100, 100, 0.6);
+    color: white;
+}
+#rc1 {
+    padding: 1%;
+    padding-left: 9%;
+}
+#rc2 {
+    padding: 1%;
+}
+.expertise {
+    display: block;
+    float: left;
+    margin: 1%;
+    width: 28%;
+    height: auto;
+    padding: 10px 15px;
+}
+#expert {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: blueviolet;
+    text-shadow: none;
+}
+a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+#links a{
+    color: white;
+    display: inline-block;
+    width: 3%;
+}
+a img{
+    width: 100%;
+    height: auto;
+}
+.column1 form {
+    padding: 30px;
+}
+input, textarea {
+    padding: 25px 15px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+button {
+    margin: 20px;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 3px solid blueviolet;
+    color: black;
+    box-shadow: black 0 0 2px;
+}
+button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+.submit {
+    width: 95%;
+}
+.submit:hover {
+    background-color: blueviolet;
+    color: white;
+}
+#skills {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill {
+    display: inline-block;
+    width: 40%;
+    margin: 2%;
+    padding: 1%;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+.small_form {
+    width: 40%;
+}
+.description ul {
+    list-style-type: none;
+    padding: 0;
+}
+.projects {
+    margin-left: auto;
+    margin-right: auto;
+}
+.project {
+    position: relative;
+    float: left;
+    max-width: 30%;
+    height: auto;
+    margin: 20px;
+}
+.project::after {
+    clear: left;
+}
+.project img {
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: teal;
+    backdrop-filter: blur(12px);
+}
+.content {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: black;
+    top: 30%;
+    left: 20%;
+    margin: -25px 0 0 -25px;
+}
+.project:hover .overlay {
+    opacity: 1;
+}
+.portfolio .heading {
+    background-color: rgba(138, 46, 223, 0.5);
+    margin-top: 10px;
+    color: white;
+}
+.nostyle {
+    all: initial;
+}
+#upwork {
+    color: green;
+}
+#upwork:hover {
+    background-color: green;
+    color: white;
+}
+.select {
+    margin: 0;
+    padding: 20px 20px;
+    border: none;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: auto 100%;
+        font-size: smaller;
+    }
+    #navbar {
+        width: 100%;
+    }
+    #header {
+        display: none;
+        
+    }
+    .mob-head {
+        display: block;
+        color: blueviolet;
+        padding: 10px 9px;
+    }
+    .navlist a {
+        padding: 10px 9px;
+    }
+    .my_intro {
+        width: 100%;
+        height: auto;
+    }
+    .my_intro img {
+        width: 100%;
+        height: auto;
+    }
+    .column1 {
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .column2 {
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .vl {
+        display: none;
+    }
+    .skill {
+        width: 80%;
+    }
+    .expertise {
+        width: 100%;
+        padding: 0;
+    }
+    #expert {
+        width: 90%;
+    }
+    .small_form {
+        width: 90%;
+    }
+    #links a {
+        width: 5%;
+    }
+    .submit {
+        width: 100%;
+    }
+    
+    .project {
+        max-width: 90%;
+    }
+    
+}

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>{% block title %}{% endblock %}</title>
+        <script>
+            // Shows one page and hides the other two
+            function showPage(page) {
+
+                //Show all buttons transparent
+                document.querySelectorAll('.select').forEach(button => {
+                    button.style.backgroundColor = 'transparent';
+                });
+                
+                //Show the active button with bg color
+                document.querySelector(`#${page}btn`).style.backgroundColor = 'blueviolet';
+
+                // Hide all of the divs:
+                document.querySelectorAll('.projects').forEach(div => {
+                    div.style.display = 'none';
+                });
+
+                // Show the div provided in the argument
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+            
+            function showAll() {
+                //Show all buttons transparent
+                document.querySelectorAll('.select').forEach(button => {
+                    button.style.backgroundColor = 'transparent';
+                });
+                
+                //Show the active button with bg color
+                document.querySelector('#all').style.backgroundColor = 'blueviolet';
+
+                document.querySelectorAll('.projects').forEach(div => {
+                    div.style.display = 'block';
+                })
+            }
+
+            // Wait for page to loaded:
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Select all buttons
+                document.querySelectorAll('button').forEach(button => {
+
+                    // When a button is clicked, switch to that page
+                    button.onclick = function() {
+                        showPage(this.dataset.page);
+                    }
+                })
+                // When a button of All is clicked, all portfolios are viewed
+                document.querySelector('#all').onclick = function () {
+                    showAll();
+                }
+            });
+        </script>
+        <style>
+            body{
+                background: url("{% static 'images/bg.jpg' %}");
+                background-position: left top, bottom right;
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-attachment: fixed;
+            }
+            #c2 {
+                background: url("{% static 'images/bg2.jpg' %}");
+                background-position: left top, bottom right;
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-attachment: fixed;
+            }
+        </style>
+        <link rel="stylesheet" href="{% static 'files/style.css' %}">
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

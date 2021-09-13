@@ -1,0 +1,73 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Muhammad Ali
+{% endblock %}
+
+
+        
+{% block body %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<ul id="navbar">
+    <div class="mob-head">
+        <strong>MUHAMMAD ALI</strong>
+    </div>
+    <li id="header" class="navlist"><a href="{% url 'home' %}"><strong>Muhammad Ali</strong></a></li>
+    <li class="navlist"><a href="#video">Video Editing</a></li>
+    <li class="navlist"><a href="#graphics">Graphics Designing</a></li>
+    <li class="navlist"><a href="#website">Website Development</a></li>
+</ul>
+<div class="heading" style="background-color: transparent;">
+    <button class="select" id="all">All</button><button data-page="website" id="websitebtn" class="select">Websites</button><button data-page="graphics" class="select" id="graphicsbtn">Graphics Designs</button><button data-page="video" id="videobtn" class="select">Videos</button>
+</div>
+<div class="portfolio">
+    <div class="projects" id="website">
+        {% for website in websites %}
+        <div class="project">
+            <img src="{{website.image.url}}">
+            <div class="overlay">
+                <div class="content">
+                    <h2>{{website.title}}</h2>
+                    <p>{{website.description}}</p>
+                    {% if website.link != 'NONE' %}
+                        <a href="{{website.link}}" style="color: white;">View Website</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="projects" id="graphics">
+        {% for graphic in graphics %}
+        <div class="project">
+            <img src="{{graphic.image.url}}">
+            <div class="overlay">
+                <div class="content">
+                    <h2>{{graphic.title}}</h2>
+                    <p>{{graphic.description}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="projects" id="video">
+        
+        {% for video in videos %}
+        <div class="project">
+            <img src="{{video.image.url}}">
+            <div class="overlay">
+                <div class="content">
+                    <h2>{{video.title}}</h2>
+                    <p>{{video.description}}</p>
+                    {% if video.link != 'NONE' %}
+                        <a href="{{video.link}}" style="color: white;">View Video</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
