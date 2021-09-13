@@ -6,6 +6,7 @@ from django.shortcuts import render
 from .models import Websites, Videos, Graphics
 from django.core.mail import send_mail
 from django.conf import settings
+from django.urls import reverse
 
 # Create your views here.
 def home(request):
@@ -32,6 +33,6 @@ def sendmail(request):
             ['mamushtaq00995@gmail.com'],
             fail_silently=False,
         )
-        return render(request, 'home/home.html')
+        return HttpResponseRedirect(reverse("home"))
     else:
         return render(request, 'home/home.html')
